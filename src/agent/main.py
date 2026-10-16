@@ -51,7 +51,7 @@ async def handle_responses(request: ResponsesRequest):
 
 def start():
     port = int(os.environ.get("PORT", 8088))
-    uvicorn.run("src.agent.main:app", host="0.0.0.0", port=port, log_level="info")
+    uvicorn.run(app, host="0.0.0.0", port=port, log_level="info")
 
 if __name__ == "__main__":
     start()
