@@ -1,0 +1,10 @@
+name: foundry-agents-mvp
+metadata:
+  template: azure.ai.agents/python-responses-basic
+services:
+  agent:
+    project: ./src/agent
+    language: python
+    host: ai.agent
+    config:
+      protocol: responses
